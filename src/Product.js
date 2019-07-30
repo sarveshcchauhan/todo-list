@@ -19,13 +19,19 @@ export default class Product extends Component {
                 deleteProduct(product.id);
               }}
             >
-              X
+              <i className="fa fa-trash" aria-hidden="true" />
               {/* to remove automatically invoke of this button we sarround it with arrow function this button will only works when it is clicked */}
             </span>
           </li>
         </ul>
       );
     });
-    return <div>{productLists}</div>;
+
+    let myproducts = productLists.length ? (
+      productLists
+    ) : (
+      <h5 className="text-center">You have no todo's left </h5>
+    );
+    return <div>{myproducts}</div>;
   }
 }

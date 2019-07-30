@@ -31,13 +31,13 @@ export default class App extends Component {
       return product.id !== id;
     });
     this.setState({
-      products: products
+      products
     });
   };
   render() {
     return (
       <div>
-        <h1 class="text-center">ToDo Lists</h1>
+        <h1 className="text-center">ToDo Lists</h1>
         <Product
           deleteProduct={this.deleteProduct}
           products={this.state.products}
