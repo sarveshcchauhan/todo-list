@@ -44,10 +44,15 @@ ul li span:nth-child(3) {
   text-align: center;
   color: rgba(236, 240, 241, 1);
 }
+.list-box{
+  position: absolute;
+  top: 62%;
+  left:35%;
+}
 .box {
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 38%;
+  left: 52%;
   transform: translate(-55%, -54%);
   width: 400px;
   background: #fff;

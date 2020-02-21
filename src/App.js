@@ -38,10 +38,12 @@ export default class App extends Component {
     return (
       <div>
         <h1 className="text-center">ToDo Lists</h1>
-        <Product
+          <div className="list-box">
+        <Product className="list-box"
           deleteProduct={this.deleteProduct}
           products={this.state.products}
         />
+        </div>
         {/* To get details of products and to enable the handle click pass the attribute  */}
         <AddProduct addProduct={this.addProduct} />
         {/* This will add the functionality of adding the product */}
